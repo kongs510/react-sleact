@@ -12,7 +12,7 @@
     "start": "cross-env NODE_ENV=production pm2 start app.js",
     "heroku-postbuild": "npm install --force --prefix alecture && npm run build --prefix alecture"
   },
-  "author": "ZeroCho",
+  "author": "mincheol kong",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.0",
