@@ -1,14 +1,18 @@
 {
   "name": "alecture",
   "version": "1.0.0",
-  "description": "",
+  "description": "slack coding",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.0",
+    "npm": "7.20.5"
+  },
   "scripts": {
     "dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --env development",
     "build": "cross-env NODE_ENV=production TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mincheol",
+  "author": "mincheol kong",
   "license": "MIT",
   "dependencies": {
     "@emotion/babel-plugin": "^11.2.0",
@@ -34,6 +38,7 @@
     "react-router-dom": "^5.2.0",
     "react-toastify": "^7.0.3",
     "regexify-string": "^1.0.5",
+    "sleact-ts-back": "file:..",
     "socket.io-client": "^2.4.0",
     "style-loader": "^2.0.0",
     "swr": "^0.4.2",
@@ -71,5 +76,6 @@
     "prettier": "^2.2.1",
     "webpack": "^5.22.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "homepage": "."
 }
