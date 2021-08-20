@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "slack coding",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.0",
+    "npm": "7.20.5"
+  },
   "scripts": {
     "dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --env development",
     "build": "cross-env NODE_ENV=production TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack",
@@ -71,5 +75,6 @@
     "prettier": "^2.2.1",
     "webpack": "^5.22.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "homepage": "."
 }
