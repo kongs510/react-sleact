@@ -1,7 +1,7 @@
 {
   "name": "sleact-ts-back",
   "version": "1.0.0",
-  "description": "",
+  "description": "slack coding",
   "main": "index.js",
   "engines": {
     "node": "12.18.0",
