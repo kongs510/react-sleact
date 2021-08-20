@@ -68,14 +68,14 @@ const config: webpack.Configuration = {
     new webpack.EnvironmentPlugin({ NODE_ENV: isDevelopment ? 'development' : 'production' }),
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: '[name].js',
-    publicPath: '/dist/',
+    publicPath: '/build/',
   },
   devServer: {
     historyApiFallback: true, // react router
     port: 3090,
-    publicPath: '/dist/',
+    publicPath: '/build/',
     proxy: {
       '/api/': {
         target: 'http://localhost:3095',

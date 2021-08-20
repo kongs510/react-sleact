@@ -40,7 +40,7 @@ if (prod) {
     })
   );
 }
-app.use(express.static(path.join(__dirname, "/alecture/dist")));
+app.use(express.static(path.join(__dirname, "/alecture/build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
@@ -62,7 +62,7 @@ app.use(passport.session());
 
 app.use("/api", apiRouter);
 app.get("*", (req, res, next) => {
-  res.sendFile(path.join(__dirname, "/alecture/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "/alecture/build", "index.html"));
 });
 
 const server = app.listen(app.get("PORT"), () => {
